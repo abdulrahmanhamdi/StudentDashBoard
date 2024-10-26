@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Student Dashboard</h1>
+    <button id="logoutBtn">Logout</button>
+    <h2>Your Results</h2>
+
+    <div id="studentResult" style="display: none;">
+        <h3>Student Information</h3>
+        <p><strong>ID:</strong> <span id="resultStudentId"></span></p>
+        <p><strong>Name:</strong> <span id="resultStudentName"></span></p>
+        <p><strong>Quiz Total:</strong> <span id="resultQuizTotal"></span></p>
+        <p><strong>Assignment:</strong> <span id="resultAssignment"></span></p>
+        <p><strong>Final Exam:</strong> <span id="resultFinalExam"></span></p>
+        <p><strong>Total Grade:</strong> <span id="resultTotalGrade"></span></p>
+    </div>
+
+    <h2>Search Your Results</h2>
+    <form id="searchForm">
+        <label>Student ID:</label>
+        <input type="text" id="searchStudentId" required>
+        <button type="submit">Search</button>
+    </form>
+
+    <script src="student_script.js"></script>
+</body>
+</html>
