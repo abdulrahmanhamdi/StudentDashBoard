@@ -9,10 +9,8 @@
 <body>
     <h1>Student Exam Dashboard</h1>
 
-    <!-- Logout Button -->
     <button id="logoutBtn">Logout</button>
 
-    <!-- Form for Adding Student Scores -->
     <h2>Add Student Scores</h2>
     <form id="studentForm">
         <label>Student ID:</label>
@@ -20,6 +18,9 @@
 
         <label>Student Name:</label>
         <input type="text" id="studentName" required><br><br>
+
+        <label>Lesson Name:</label>
+        <input type="text" id="lessonName" required><br><br>
 
         <label>Quiz 1 Score:</label>
         <input type="number" id="quiz1" required min="0" max="100"><br><br>
@@ -39,7 +40,6 @@
         <button type="submit">Add Student</button>
     </form>
 
-    <!-- Form for Searching Student by ID -->
     <h2>Search Student</h2>
     <form id="searchForm">
         <label>Student ID:</label>
@@ -47,15 +47,17 @@
         <button type="submit">Search</button>
     </form>
 
-    <!-- Display Student Information -->
     <div id="studentResult" style="display: none;">
         <h3>Student Information</h3>
         <p><strong>ID:</strong> <span id="resultStudentId"></span></p>
         <p><strong>Name:</strong> <span id="resultStudentName"></span></p>
+        <p><strong>Lesson Name:</strong> <span id="resultLessonName"></span></p>
         <p><strong>Quiz Total:</strong> <span id="resultQuizTotal"></span></p>
         <p><strong>Assignment:</strong> <span id="resultAssignment"></span></p>
         <p><strong>Final Exam:</strong> <span id="resultFinalExam"></span></p>
         <p><strong>Total Grade:</strong> <span id="resultTotalGrade"></span></p>
+        
+        <button id="deleteStudentBtn">Delete Student</button>
     </div>
 
     <script src="script.js"></script>

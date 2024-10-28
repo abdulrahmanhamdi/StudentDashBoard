@@ -23,7 +23,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ username, password, role: currentRole }), // Include the role in the request
+        body: JSON.stringify({ username, password, role: currentRole }), 
     })
     .then(response => {
         if (response.ok) {
